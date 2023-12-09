@@ -15,6 +15,16 @@ public class Classe {
     public final static int NBRE_MAX_ELEVES = 20;
 
     /**
+     * L'attribut de la classe qui stocke tous les élèves de celle-ci.
+     */
+    private Eleve[] eleves;
+
+    /**
+     * L'attribut nom de la classe qu'on représente.
+     */
+    private String nom;
+
+    /**
      * Constructeur d'une classe d'élève.
      *
      * @param nom le nom de cette classe d'élèves
@@ -210,13 +220,5 @@ public class Classe {
         return resultat;
     }
 
-    /**
-     * L'attribut de la classe qui stocke tous les élèves de celle-ci.
-     */
-    private Eleve[] eleves;
 
-    /**
-     * L'attribut nom de la classe qu'on représente.
-     */
-    private String nom;
 }
