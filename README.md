@@ -1,5 +1,5 @@
 # Exercice 02 : Eleves
-## durée : 105'
+## Durée : 105'
 ## Objectifs visés :
 - Implémentation d’une classe simple
 - Création et utilisation d‘objets stockés dans un tableau
@@ -90,6 +90,20 @@ Créer ensuite 5 élèves différents et rajoutez les à votre classe à l'aide 
 
 ## Partie 4 : Affichage plus intelligent de la classe
 Rendez votre classe Classe plus intelligente en codant plus adéquatement sa méthode `getEleves()`.
+
 En effet, il n’est ni utile ni pratique de retourner à l’utilisateur notre tableau d’élèves tel quel, car il est fort probable que celui-ci contienne des cases « vides », c-à-d ne contenant PAS d’élèves (**null**).
 Pourquoi embarrasser l’utilisateur avec un tel résultat ? Lui donner un tableau de taille 20 alors qu’il n’y a que 3 élèves dedans ???
-Il faut lui retourner une liste ne contenant QUE les élèves présents dans cette classe, et rien d’autre. Modifiez la méthode `getEleves()` en conséquence. Testez depuis votre `main()` en appelant cette méthode et en affichant les objets retournés sans vérification de présence d’objets.
+
+En clair, plutôt que de lui rendre un tableau ressemblant à ceci :
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| Jean | `null` | Paul | `null` | `null` | Simon | `null` | `null` | François | `null` |
+
+Il est bien plus pratique et logique pour celui qui appellera cette méthode  `getEleves()` de recevoir ce tableau :
+| 0 | 1 | 2 | 3 |
+| :----: | :----: | :----: | :----: |
+| Jean | Paul | Simon | François |
+
+Il faut donc retourner une liste **ne contenant QUE** les élèves réellement présents et rien d’autre.
+
+Modifiez la méthode `getEleves()` en conséquence puis testez depuis votre `main()` en appelant cette méthode et en affichant les objets retournés **sans vérifier la présence d’objets** (si vous ne comprenez pas le sens exact de cette partie en gras c'est que quelque-chose d'important dans ce module est en train de vous échapper ! N'attendez pas pour clarifier cela !).
