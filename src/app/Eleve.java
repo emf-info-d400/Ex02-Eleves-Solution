@@ -10,12 +10,22 @@ package app;
 public class Eleve {
 
     /**
+     * L'attribut prénom de l'objet élève.
+     */
+    private final String prenom;
+
+    /**
+     * L'attribut nom de l'objet élève.
+     */
+    private final String nom;
+
+    /**
      * Le constructeur de l'élève.
      *
      * @param prenom le prénom de l'élève
      * @param nom    le nom de l'élève
      */
-    public Eleve( String prenom, String nom ) {
+    public Eleve(String prenom, String nom) {
         this.prenom = prenom;
         this.nom = nom;
     }
@@ -43,13 +53,4 @@ public class Eleve {
         return nom;
     }
 
-    /**
-     * L'attribut prénom de l'objet élève.
-     */
-    private final String prenom;
-
-    /**
-     * L'attribut nom de l'objet élève.
-     */
-    private final String nom;
 }
