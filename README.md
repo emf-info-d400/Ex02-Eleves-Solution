@@ -85,7 +85,7 @@ Pour l’implémentation des méthodes de cette classe observez attentivement le
 Pour les méthodes qui pourraient voir leur travail échouer elles retournent un booléen indiquant si ça s’est bien passé (**true**) ou mal passé (**false**). 
 Dans le doute, demandez au prof, il vous guidera avec plaisir.
 
-Dans le `main()` de votre programme principal, commencez par créer une nouvelle ´Classe´ qui représentera les élèves de la classe **"30021X"**.
+Dans le `main()` de votre programme principal, commencez par créer une nouvelle ´Classe´ qui représentera les élèves de la classe **"INFO-F1X"**.
 Créer ensuite 5 élèves différents et rajoutez les à votre classe à l'aide de sa méthode adéquate. Pour terminer, affichez le contenu de la classe en appelant sa méthode adéquate.
 
 ## Partie 4 : Affichage plus intelligent de la classe
